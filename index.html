@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Benjamin Lyke - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Benjamin Lyke - Portfolio</h1>
+								<p>benjamincavanaugh@gmail.com</p>
+								<p><a href="https://www.linkedin.com/in/benjamin-lyke/">LinkedIn</a></p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Intro</a></li>
+								<li><a href="#work">GIS Work</a></li>
+								<li><a href="#about">Python</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Intro</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<p>Hello, my name is Benjamin Lyke. I am a graduate from the University of North Texas with a master's degree in Geography focusing on Geospatial Data Analytics as well as a Graduate Certificate in GIS. This portfolio will be used to give an overview of some of the work I have done ranging from GIS work to Python programming. This portfolio will not showcase everything I have worked on but will show the range of my GIS abilities.</p>
+								<a href="Files/ResumeBLyke.pdf" target="blank"><h3 class="major">Click here for Resume</h3></a>
+								<h3 class="major">Key Courses Taken</h3>
+								<p>Introductory and Advanced Python Programming</p>
+								<p>Introductory and Advanced GIS</p>
+								<p>Health GIS</p>
+								<p>Business GIS</p>
+								<p>Harvesting, Storing, and Retrieving Data</p>
+								<p>LiDAR</p>
+								<p>Digital Image Analysis</p>
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">GIS Work</h2>
+								<h3 class="major">Health GIS</h3>
+								<span class="image main"><img src="images/Waterborne.PNG" alt="" /></span>
+								<p>For a Health GIS course I did a project based on wasterborn diseases in the US, showcasing the states with the most waterborne diseases, compared to the highest crude rate (per10,000) and the highest relative risk. The initial mapping for this project was the total number of cases, with all data being courced from CDC Wonder.</p>
+								<span class="image main"><img src="images/waterborneCrude.PNG" alt="" /></span>
+								<p>While the total cases told one story, the crude rate put a different set of states at the top of the list of waterborne illness risks.</p>
+								<span class="image main"><img src="images/WaterborneRelativeRisk.PNG" alt="" /></span>
+								<p>The relative risk (which was obtained by dividing the number of cases (c) by the population (p) for each state and then dividing that by the overall U.S. cases (C) and population (P) (c/p)/(C/P)) put South Dakota as having the highest relative risk, and through some research I was able to find that South Dakota doesn't follow the EPA recommendations for the amount of certain pollutants in drinking water like most other states do which likely accounted for the higher relative risk of waterborne diseases in the state.</p>
+								<h3 class="major">LiDAR</h3>
+								<span class="image main"><img src="images/Terrain.PNG" alt="" /></span>
+								<p>Working with LiDAR, I created a Digital Terrain Model (DTM) from the years 2011 to 2020 in the Greenbelt Park in Denton Texas. This involved downloading and joining 20 sets of point cloud data for each year to fit the area being researched. The purpose of this was to study the change over time since the Greenbelt Park was closed for a six year period within this range due to flooding, and I wanted to see what effects the flooding had on elevation in the area, and the prevalence of vegetation.</p>
+								<p>The first part of this was to create the DTM for each year and then use a raster calculating tool to find areas that had a change in elevastion greater than 1 meter. The results showed the change mostly occuring in the main path of the river.</p>
+								<span class="image main"><img src="images/vegetation.PNG" alt="" /></span>
+								<p>Additionaly, using the LAS Classification Filters for vegetation I made note of the areas where the presence of vegetation changed during the time period.</p>
+								<p>Overall results of this analysis did not provide any groundbreaking results with only 6.9% of the total area having an elevation change of at least one meter, and only 4.78% having a change in vegetation height by one meter, but insight into landscape changes is always useful even if there isn't a major change.</p>
+								<h3 class="major">Digital Image Analysis</h3>
+								<span class="image main"><img src="images/RayzorRanch.jpg" alt="" /></span>
+								<p>For Digital Image Analysis I sourced imagery for eight years in an area of Denton Texas that had significant development. I chose high resolution NAIP imagery to do a series of supervised and unsupervised classifications to analyze the change in landcover types over the years as well as test the accuracy of the supervised or unsupervised classification methods.</p>
+								<span class="image main"><img src="images/Supervised.jpg" alt="" /></span>
+								<span class="image main"><img src="images/Supervised.png" alt="" /></span>
+								<p>First I completed a manual supervised classification for each year deparating the area into four categories (Built up Land, Barren Land, Natural Vegetation, and Water). I also created a bar graph showing the change over time for the different categories.</p>
+								<span class="image main"><img src="images/Unsupervised.jpg" alt="" /></span>
+								<span class="image main"><img src="images/Unsupervised.png" alt="" /></span>
+								<p>I then ran an unsupervised classification to for all eight years to separate the land into the same four categories.</p>
+								<span class="image main"><img src="images/image.png" alt="" /></span>
+								<p>Lastly, using ground truthing I tested the accuracy of the classification methods by manually checking thorugh 200 points. The results of this analysis were as expected, with the supervised clasasification showing significantly more accuracy, and with built up land overtaking the other landcover categories in the area. </p>
+								<h3 class="major">Contract Work</h3>
+								<p>While working as a contractor for Commission Shift, I was tasked with analyzing the locations of orphaned or inactive gas wells in Texas. While most of the work involved data cleaning for the purpose of analysis part of it involved looking at different demographic populations to see if counties with orphaed oil or gas wells were more heavily populated by groups that are commonly hit the hardest by environmental inequity.</p>
+								<p>A couple of maps showcasing this analysis can be seen below:</p>
+								<span class="image main"><img src="images/CS1.PNG" alt="" /></span>
+								<span class="image main"><img src="images/CS2.PNG" alt="" /></span>
+							</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">Python</h2>
+								<p>Below is an example of a python script that I wrote. The purpose of the script is to join tables of orphaned oil and gas wells as well as groundwater contamination points from data obtained from the Railroad Commission of Texas. Then the code will output a map that gives point locations based on the latitude and longitude and makrs the orphaned wells versus groundwater contamination points in different colors. The code also makes it so that when points are hovered over information for each point can be viewed (Type, Well ID, Contamination File No, as well as Lat/Long)</p>
+								<p>The code uses the libraries plotly, pandas, geopy, and csv, and was written in Python 3.0</p>
+								<h3 class="major">Code</h3>
+								<span class="image main"><img src="images/code.png" alt="" /></span>
+								<h3 class="major">Output</h3>
+								<span class="image main"><img src="images/Python1.jpg" alt="" /></span>
+								<span class="image main"><img src="images/Python2.jpg" alt="" /></span>
+								<span class="image main"><img src="images/Python3.jpg" alt="" /></span>
+							</article>
+
+						
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+							
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
